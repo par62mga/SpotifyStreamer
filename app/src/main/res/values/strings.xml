@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Spotify Streamer</string>
+    <string name="app_hash_tag"> #SpotifyStreamer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_now_playing">Now Playing</string>
+    <string name="action_share_track">Share</string>
+
+    <string name="artist_prompt">search for artist</string>
+    <string name="artist_image">artist image</string>
+    <string name="artist_searching">Searching for %1$s...</string>
+    <string name="artist_not_found">Could not find any artists matching: %1$s</string>
+
+    <string name="track_image">track image</string>
+    <string name="track_searching">Loading top tracks for %1$s...</string>
+    <string name="track_not_found">Could not find any tracks\nArtist: %1$s Country: %2$s</string>
+
+    <string name="title_activity_top_tracks">Top 10 Tracks</string>
+    <string name="title_activity_play_tracks">Spotify Streamer</string>
+    <string name="title_share_tracks">Share Spotify Streamer track:</string>
+
+    <string name="description_play_tracks_image">Now playing artwork</string>
+    <string name="description_next_track">Play next track</string>
+    <string name="description_pause_play">Pause or play music</string>
+    <string name="description_previous_track">Play previous track</string>
+
+    <string name="label_next_track">Next</string>
+    <string name="label_pause">Pause</string>
+    <string name="label_play">Play</string>
+    <string name="label_previous_track">Previous</string>
+
+    <string name="error_play_tracks">Oops this one did not play\nPlease try again later"</string>
+
+    <!-- Strings for the country preference -->
+    <string name="pref_country_label">Country</string>
+    <string name="pref_country_key" translatable="false">country</string>
+    <string name="pref_country_default" translatable="false">US</string>
+    <string name="error_country_code">"Invalid ISO country code\nPlease try again"</string>
+
+    <!-- Strings for the notification preference -->
+    <string name="pref_notification_label">Allow Notification</string>
+    <string name="pref_notification_key" translatable="false">notification</string>
+
+</resources>

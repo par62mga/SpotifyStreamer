@@ -1,0 +1,27 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--
+    This layout is used for two-pane view when running on tablets
+    -->
+    <fragment
+        android:id="@+id/fragment_artist_search"
+        android:name="com.example.pkrobertson.spotifystreamer.ArtistSearchFragment"
+        tools:layout="@layout/fragment_artist_search"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="2" />
+
+    <fragment
+        android:id="@+id/fragment_top_tracks"
+        android:name="com.example.pkrobertson.spotifystreamer.TopTracksFragment"
+        tools:layout="@layout/fragment_top_tracks"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="3" />
+
+</LinearLayout>

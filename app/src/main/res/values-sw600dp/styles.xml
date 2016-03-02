@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Style for artist list view when running on tablets  -->
+    <style name="ArtistListStyle">
+        <item name="android:choiceMode">singleChoice</item>
+    </style>
+
+    <style name="PlayTracksTheme" parent="Theme.AppCompat.Light.Dialog">
+    </style>
+
+</resources>

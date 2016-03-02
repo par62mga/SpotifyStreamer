@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="240dp"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="220dp"
+                android:minHeight="220dp"
+                android:id="@+id/play_tracks_track_image"
+                android:gravity="center"
+                android:contentDescription="@string/description_play_tracks_image" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/play_tracks_track_progress" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/play_tracks_current_time"
+                    style="@style/TextSmallStyle" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/play_tracks_duration"
+                    style="@style/TextSmallStyle" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/play_tracks_artist_name"
+                style="@style/TextTitleStyle"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/play_tracks_track_album"
+                style="@style/TextSubtitleStyle"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/play_tracks_track_name"
+                style="@style/TextSubtitleStyle"
+                android:gravity="center" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="32dp"
+                android:paddingLeft="64dp"
+                android:paddingRight="64dp">
+                <ImageButton
+                    android:id="@+id/play_tracks_previous_track"
+                    android:layout_width="64dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_skip_previous_black"
+                    android:contentDescription="@string/description_previous_track"
+                    style="@style/ButtonStyle" />
+                <ImageButton
+                    android:id="@+id/play_tracks_pause_play"
+                    android:layout_width="64dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_play_arrow_black"
+                    android:contentDescription="@string/description_pause_play"
+                    style="@style/ButtonStyle" />
+                <ImageButton
+                    android:id="@+id/play_tracks_next_track"
+                    android:layout_width="64dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_skip_next_black"
+                    android:contentDescription="@string/description_next_track"
+                    style="@style/ButtonStyle" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
